@@ -1,4 +1,3 @@
-//your JS code here. If required.
 
 document.querySelector("form").addEventListener("submit",(event)=>{
     event.preventDefault();
@@ -6,10 +5,10 @@ document.querySelector("form").addEventListener("submit",(event)=>{
     const form=document.querySelector("form");
     const data=new FormData(form);
 
-    const fname=data.get("fname").trim();
-    const lname=data.get("lname").trim();
-    const phone=data.get("phone_number").trim();
-    const email=data.get("email").trim();
+    const fname=data.get("First Name").trim();
+    const lname=data.get("Last Name").trim();
+    const phone=data.get("Phone Number").trim();
+    const email=data.get("Email ID").trim();
 
     if(!fname || !lname || !phone || !email) return;
 
@@ -17,3 +16,4 @@ document.querySelector("form").addEventListener("submit",(event)=>{
     alert(s);
 
 })
+
